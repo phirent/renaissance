@@ -1,0 +1,614 @@
+@font-face {
+  font-family: "poppins";
+  src: url(./fontt/Poppins-SemiBold.ttf);
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "poppins2";
+  src: url(./fontt/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
+
+@font-face {
+  font-family: "poppins3";
+  src: url(./fontt/Poppins-Bold.ttf);
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
+@font-face {
+  font-family: "poppins4";
+  src: url(/fontt/Poppins-ExtraLight.ttf);
+  font-style: normal;
+  font-weight: normal;
+  display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color3: rgb(249, 245, 245);
+  --background-color4: #eff3f1;
+  --couleur-remise: rgb(134, 134, 8);
+  --primary-color: rgb(7, 159, 7);
+  --secondary-color: rgb(37, 37, 39);
+  --background-color: rgb(245, 240, 240);
+  --background-color2: grey;
+  --last-color: white;
+}
+body {
+  font-family: "poppins";
+}
+.header {
+  background-color: var(--last-color);
+  height: 80px;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  background-color: var(--secondary-color);
+  height: 60px;
+  overflow: hidden;
+}
+.logo-nom {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+.logo-nomA {
+  text-decoration: none;
+}
+.input1 {
+  border-radius: 8px;
+  position: absolute;
+  left: 500px;
+  bottom: 10px;
+  padding: 20px 300px 20px 50px;
+  border: 0.1px solid var(--background-color2);
+  outline: none;
+}
+.btn {
+  position: absolute;
+  left: 900px;
+  bottom: 10px;
+  padding: 15px;
+  border-radius: 0 8px 8px 0;
+  border: 0.1px solid var(--background-color);
+  background-color: var(--primary-color);
+  transition: 0.2s;
+}
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+span {
+  font-family: "poppins";
+  font-size: 1.3em;
+  color: white;
+}
+input::placeholder {
+  font-family: "poppins2";
+  font-size: 1.1em;
+}
+.recherche {
+  position: absolute;
+  bottom: 20px;
+  left: 525px;
+  z-index: 1;
+}
+ul {
+  display: flex;
+  list-style: none;
+  margin-top: 15px;
+}
+ul li {
+  margin-left: 30px;
+}
+ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--background-color);
+  font-size: 1.2em;
+}
+ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--background-color);
+  transition: width 0.3s ease;
+}
+ul li a:hover::after {
+  width: 100%;
+  height: 4px;
+}
+ul:first-child {
+  margin-left: 50px;
+}
+.section {
+  position: absolute;
+  display: flex;
+  bottom: 18px;
+  left: 72rem;
+}
+.section div {
+  margin-right: 5px;
+}
+.numero-svg {
+  display: flex;
+  color: var(--last-color);
+  margin-left: 70rem;
+  margin-top: -23px;
+}
+.numero-svg > .svg-phone {
+  margin-right: 1.2em;
+}
+.main1 {
+  display: flex;
+  background-color: var(--background-color);
+  margin-top: 1.5em;
+  margin: 25px 80px 0 80px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+/* ceci concerne le bouttton acheter */
+.acheter {
+  background-color: var(--primary-color);
+  padding: 0.9em;
+  border: none;
+  border-radius: 5px;
+  margin-left: 50px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.acheter::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+  opacity: 3;
+}
+.acheter:hover::before {
+  transform: scaleX(2);
+  transform-origin: center;
+}
+.acheter span {
+  position: relative;
+  z-index: 1;
+  transition: color 0.1s ease;
+}
+.acheter:hover span {
+  color: var(--primary-color);
+}
+.woman {
+  text-transform: uppercase;
+  color: var(--background-color2);
+}
+.welcome {
+  font-size: 1.2em;
+  font-family: "poppins2";
+  font-weight: 10px;
+  color: var(--primary-color);
+  margin: 40px 0px 10px 35px;
+}
+.frais {
+  font-size: 3em;
+  font-family: "poppins3";
+}
+.remise {
+  font-size: 1.6em;
+  margin: 0px 10px 10px 10px;
+  margin-left: 50px;
+}
+.remise2 {
+  color: var(--primary-color);
+}
+.enjoy {
+  font-size: 1.1em;
+  margin-left: 50px;
+}
+.frais {
+  margin-left: 50px;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.optionGroup {
+  display: flex;
+  margin: 0px 50px 70px 50px;
+}
+.option {
+  border: 1px solid var(--background-color2);
+  border-radius: 6px;
+  display: flex;
+  padding: 0px;
+  margin: 5px;
+}
+.option:hover {
+  scale: 1.1;
+  background-color: var(--primary-color);
+}
+.svg {
+  margin: 5px 5px 0px 5px;
+  background-color: var(--background-color);
+  height: 6vh;
+  padding: 9px;
+  border-radius: 5px;
+}
+.texte > p:first-of-type {
+  text-transform: uppercase;
+  margin: 5px;
+  font-family: "poppins3";
+  color: rgb(13, 28, 13);
+}
+.texte p:nth-child(2) {
+  color: var(--secondary-color);
+}
+/* 
+.slogan {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "poppins3";
+  color: var(--secondary-color);
+  margin-bottom: 6rem;
+} */
+.section4 {
+  display: flex;
+  margin-bottom: 50px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-around;
+}
+.image {
+  width: 15em;
+}
+.mini {
+  border: 1px solid var(--background-color2);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--background-color2);
+}
+.section4 .mini:first-child:hover {
+  background-color: purple;
+}
+.section4 .mini:nth-child(2):hover {
+  background: linear-gradient(red, blue, purple, yellow, green);
+}
+.section4 .mini:nth-child(3):hover {
+  background: linear-gradient(red, blue, purple, yellow, red);
+}
+
+.section4 .mini:nth-child(4):hover {
+  background-color: rgb(101, 42, 14);
+}
+.nom-fruits {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 6px;
+  color: var(--last-color);
+  font-family: "poppins3";
+}
+/* .slogan1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "poppins4";
+  color: var(--background-color2);
+  font-size: 1.8em;
+  margin-bottom: 50px;
+} */
+
+/* ici c'est la section concernant le cameroun */
+.section5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.camerounaise {
+  position: relative;
+}
+.camerounaise img {
+  border-radius: 50%;
+  position: relative;
+}
+.decouvrir {
+  position: absolute;
+  bottom: 160px;
+  left: 55px;
+  color: white;
+  font-size: 1.6em;
+  font-family: 'poppins1';
+  text-shadow: 4px 4px 4px black;
+}
+.voirplus {
+  position: absolute;
+  top: 23em;
+  left: 10em;
+  padding: 16px 22px 16px 22px;
+  border-radius: 8px;
+  background-color: rgb(236, 236, 5);
+  border: none;
+}
+.voirplus span {
+  font-family: "poppins3";
+  color: #1b5e20;
+}
+/* 
+ici ce sont les titres des differentes sections */
+.slogan2,
+.slogan1,
+.slogan {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "poppins2";
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin-bottom: 50px;
+  margin-top: 1.6em;
+}
+/*ici c'est la section pour les avis clients */
+.section6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "poppins4";
+}
+.client {
+  border: 1px dotted var(--background-color2);
+  padding: 1em 1.4em 1em 1.4em;
+  border-radius: 9px;
+  position: relative;
+  overflow: hidden;
+}
+.image-client {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+}
+.image-icone {
+  display: flex;
+}
+.nom-client {
+  position: absolute;
+  top: 50px;
+  left: 7em;
+}
+.nom-client p:first-child {
+  font-family: "poppins3";
+}
+.descrption-client {
+  margin-top: 20px;
+}
+footer {
+  display: flex;
+  margin-top: 70px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(252, 249, 249);
+  color: var(--secondary-color);
+  overflow: hidden;
+  position: relative;
+  font-family: "poppins2";
+  cursor: pointer;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+.lien{
+  margin-top: 10px;
+}
+
+.lien:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+/* les textex devant les icones du footer */
+.svg-contact {
+  color: var(--primary-color);
+}
+.svg-email{
+  color: var(--secondary-color);
+  font-family: 'poppins4';
+}
+/* les titres du footer */
+.title {
+  font-family: "poppins1";
+  font-size: 1.7em;
+  margin: 10px;
+  font-weight: bold;
+}
+/* pour les icones des reseaux sociaux */
+.icones-reseaux {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.icon1 {
+  margin: 12px;
+  background-color: var(--last-color);
+  padding: 8px;
+  border-radius: 7px;
+}
+.icon1:hover {
+  scale: 1.5;
+}
+/* ici c'est la derniere section pour le copyright */
+.footer {
+  background-color: rgb(252, 249, 249);
+  padding-bottom: 35px;
+  padding-top: 30px;
+  margin-top: 0;
+  color: var(--primary-color);
+  border-top: 2px solid var(--background-color);
+}
+.toutes-section-footer {
+  margin-bottom: 20px;
+}
+.description{
+margin-top: 10px;
+}
+
+/* les inputs du footer */
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--last-color);
+  border: 1px solid var(--background-color2);
+  padding: 12px 8px 12px 8px;
+  margin-bottom: 5px;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  left: 73rem;
+  margin-top: 10px;
+  
+}
+input[type="text"] {
+  border: 1px solid var(--background-color2);
+  padding: 12px 62px 12px 20px;
+  background-color: rgb(252, 249, 249);
+  margin-bottom: 5px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+input::placeholder {
+  font-family: "poppins";
+}
+/* pour les icones  de l'email et du phone du footer */
+.tel,
+.mail {
+  background-color: var(--last-color);
+  border-radius: 5px;
+  position: absolute;
+  right: 22.5rem;
+  margin-right: 70px;
+}
+.souscription{
+  font-size: 20px;
+}
+/* pour les cartes juste apres la section commentaires client */
+.section-categorie {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.image-categorie {
+  border: 0.5px solid rgb(153, 214, 153);
+  position: relative;
+  padding: 10px 10px 15px 10px;
+  border-radius: 10px;
+}
+.remise-care {
+  background-color: rgb(250, 164, 3);
+  color: var(--secondary-color);
+  padding: 4px;
+  border-radius: 5px;
+  font-family: "poppins2";
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.image-carte {
+  border-radius: 10px;
+}
+.icone-carte {
+  margin: 10px 0px 10px 0px;
+}
+.nom-du-produit {
+  margin-bottom: 5px;
+  font-family: "poppins2";
+  font-weight: normal;
+  color: var(--primary-color);
+}
+.prix-actuel {
+  font-weight: normal;
+  font-size: 22px;
+  margin-right: 10px;
+  font-family: "poppins2";
+  color: var(--secondary-color);
+}
+.ancien-prix {
+  font-weight: normal;
+  font-family: "poppins4";
+  font-size: 20px;
+  color: var(--background-color2);
+  text-decoration: line-through;
+}
+.compteur1 {
+  margin-right: 15px;
+  color: var(--secondary-color);
+  font-family: "poppins2";
+  font-size: 30px;
+}
+.compteur {
+  background-color: var(--background-color3);
+  border-radius: 2px;
+  padding: 5px;
+  margin-right: 10px;
+}
+.compteur-carte {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.add-to-cart {
+  background-color: var(--background-color3);
+  color: var(--secondary-color);
+  border-radius: 2px;
+  padding: 5px;
+  font-family: "poppins2";
+  padding-top: 12px;
+  font-size: 20px;
+}
+.add-to-cart:hover {
+  background-color: orange;
+  color: white;
+  border-radius: 9px;
+}
+
+/* ceci concerne la section contenant les informatios sur les produits */
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box {
+  border: 1px double var(--background-color2);
+  border-radius: 10px;
+  padding: 7px;
+}
+.conseil {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  color: var(--secondary-color);
+  font-family: "poppins2";
+  font-size: 1.1em;
+}
+.descript {
+  margin-bottom: 8px;
+  color: var(--background-color2);
+}
+.savoir {
+  color: var(--secondary-color);
+  font-family: "poppins3";
+  background-color: var(--background-color);
+}
+.box img {
+  margin: 8px 0px 8px 10px;
+}
