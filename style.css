@@ -56,6 +56,13 @@ nav {
   height: 60px;
   overflow: hidden;
 }
+.nav-fixe{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 .logo-nom {
   display: flex;
   align-items: center;
@@ -133,11 +140,15 @@ ul li a:hover::after {
 ul:first-child {
   margin-left: 50px;
 }
+numero{
+  margin: 6px;
+}
 .section {
   position: absolute;
   display: flex;
-  bottom: 18px;
-  left: 72rem;
+  bottom: 13px;
+  left: 69rem;
+  top: 6px;
 }
 .section div {
   margin-right: 5px;
@@ -145,7 +156,7 @@ ul:first-child {
 .numero-svg {
   display: flex;
   color: var(--last-color);
-  margin-left: 70rem;
+  margin-left: 60rem;
   margin-top: -23px;
 }
 .numero-svg > .svg-phone {
@@ -203,15 +214,22 @@ ul:first-child {
   color: var(--background-color2);
 }
 .welcome {
-  font-size: 1.2em;
-  font-family: "poppins2";
-  font-weight: 10px;
+  font-size: 1.3em;
+  font-family: "poppins";
   color: var(--primary-color);
-  margin: 40px 0px 10px 35px;
+  margin: 40px 0px 0px 55px;
 }
 .frais {
   font-size: 3em;
-  font-family: "poppins3";
+  font-family: "poppins1";
+  margin-bottom: 0px;
+}
+.frais2 {
+  font-size: 3em;
+  font-family: "poppins1";
+  margin-bottom: 0px;
+  margin-top: 8px;
+  margin-left: 54px;
 }
 .remise {
   font-size: 1.6em;
@@ -591,7 +609,7 @@ input::placeholder {
 .box {
   border: 1px double var(--background-color2);
   border-radius: 10px;
-  padding: 7px;
+  padding: 2px;
 }
 .conseil {
   text-transform: capitalize;
@@ -601,7 +619,7 @@ input::placeholder {
   font-size: 1.1em;
 }
 .descript {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   color: var(--background-color2);
 }
 .savoir {
@@ -610,5 +628,5 @@ input::placeholder {
   background-color: var(--background-color);
 }
 .box img {
-  margin: 8px 0px 8px 10px;
+  margin: 8px 8px 8px 10px
 }
