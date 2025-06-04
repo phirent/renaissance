@@ -11,6 +11,16 @@
 </head>
 <body class="body">
     <header class="header">
+
+<svg width="45" height="45" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="compte-client">
+  <circle cx="12" cy="7" r="4" fill="#079F07"/>
+  <path d="M4 20c0-4 3.58-6 8-6s8 2 8 6" fill="#079F07"/>
+</svg>
+
+
+
+
+
         <a href="#" class="logo-nomA">
         <div class="logo-nom">
             <img src="image/phirent.png" alt="phirent" width="100px" height="70px">
@@ -26,46 +36,47 @@
            </svg>
            </div>
              <input type="search" placeholder="Chercher un produit..." class="input1">
-            <button class="btn"><span>rechercher</span></button>
-        </form>
-        <section class="section">
-             <img src="image/woman.png" alt="image" height="50px">
-            <p class="woman">votre supermarché</br> à proximité </p>
-        </section>
+            <button class="btn"><span>Search</span></button>
+          </form>
     </header>
 
     <nav class="navBar">
-<ul>        
+<ul class="ul">        
     <li><a href="#">Home</a></li>
     <li><a href="#">A propos</a></li>
     <li><a href="#">Shop</a></li>
     <li><a href="#">Blog</a></li>
     <li><a href="#">Contactez-nous</a></li>
-    
-</ul>
+    </ul>
+    </nav>
+<!-- 
 <div class="numero-svg">
 <div class="svg-phone"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="24" height="24">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
           d="M3 5a2 2 0 012-2h2a1 1 0 011 1v3a1 1 0 01-.293.707l-1.414 1.414a16.001 16.001 0 006.586 6.586l1.414-1.414A1 1 0 0116 14h3a1 1 0 011 1v2a2 2 0 01-2 2A17 17 0 013 5z" />
   </svg>
   </div>
-
     <div class="numero">(237)650-412-395</div>
-</div>
-    </nav>
+</div> -->
+     <div class="button-nav"></div>
+
     <section class="main1">
-        <div>
+
+        <div class="messages">
         <p class="welcome">BIENVENUE CHEZ PHIRENT</p>
-        <p class="frais">Du bio, Du vrai</p>
+        <p class="natural">Du bio, Du vrai</p>
+
+<p class="texte2">La fraîcheur à portée de main, chaque jour.c'est Toujours bon.</p>
+
         <p class="frais2">Naturellement Bon</p>
         <p class="remise">Remise jusqu'a  <span class="remise2">30%</span> </p>
         <p class="enjoy">Livraison offerte. On livre, vous savourez </p>
         <button class="acheter"> <span>acheter maintenant</span></button>
-       
-    </div>
-<div class="frais">
-    <img src="image/fruits1.png" alt="image" height="220px" width="600px">
+       </div>
+      <div class="frais">
+    <img src="image/fruits1.png" alt="image" height="220px" width="600px" id="imageAccuiel">
 </div>
+
     </section>
      
     <section class="optionGroup">
@@ -149,19 +160,42 @@
             <img src="/image/pomme.jpg" alt="pomme" class="image"> 
             <p class="nom-fruits">pomme</p>
         </div>
+
+                <div class="mini">
+            <img src="/image/pomme.jpg" alt="pomme" class="image"> 
+            <p class="nom-fruits">pomme</p>
+        </div>
+                <div class="mini">
+            <img src="/image/pomme.jpg" alt="pomme" class="image"> 
+            <p class="nom-fruits">pomme</p>
+        </div>
+                <div class="mini">
+            <img src="/image/pomme.jpg" alt="pomme" class="image"> 
+            <p class="nom-fruits">pomme</p>
+        </div>
+
+        <div class="mini">
+            <img src="/image/banner1.jpg" alt="banner1" class="image"> 
+            <p class="nom-fruits">vegetable</p>
+        </div>
+
+        <div class="mini">
+            <img src="/image/banner1.jpg" alt="banner1" class="image"> 
+            <p class="nom-fruits">vegetable</p>
+        </div>
     </section>
       <p class="slogan1">consommer À la camerounaise</p>
 
       <section class="section5">
-<div class="camerounaise"><img src="/image/frais.jpg" alt="camerounaise" width="400px" height="400px">
+<div class="camerounaise" id="camerounaise1"><img src="/image/frais.jpg" alt="camerounaise" >
   <p class="decouvrir">Mangeons local, vivons mieux!</p>
   <button class="voirplus"> <span>voir plus</span></button>
 </div>
-<div class="camerounaise"><img src="/image/camer.png" alt="camerounaise" width="400px" height="400px">
+<div class="camerounaise"><img src="/image/camer.png" alt="camerounaise" >
     <p class="decouvrir">Mangeons local, vivons mieux!</p>
   <button class="voirplus"> <span>voir plus</span></button>
 </div>
-<div class="camerounaise"><img src="/image/client2.jpg" alt="camerounaise" width="400px" height="400px">
+<div class="camerounaise"><img src="/image/client2.jpg" alt="camerounaise" >
     <p class="decouvrir">Mangeons local, vivons mieux!</p>
   <button class="voirplus"> <span>voir plus</span></button>
 </div>
@@ -169,7 +203,7 @@
 <!-- ici c'est pour les cartes juste apres la section commentaires clients -->
       <p class="slogan2">categories</p>
       <section class="section-categorie">
-<div class="image-categorie"><img src="/image/noix.png" alt="noie" width="270px" height="200px" class="image-carte">
+<div class="image-categorie" id="div1"><img src="/image/noix.png" alt="noie" width="270px" height="200px" class="image-carte">
 <span class="remise-care">-20%</span>
   <!-- ici nous avons les icones qui sont dans cette carte -->
   <div class="icone-carte">
@@ -272,12 +306,101 @@
 </div>
 </div>
 </div>
+
+
+
+<div class="image-categorie" id="div1"><img src="/image/noix.png" alt="noie" width="270px" height="200px" class="image-carte">
+<span class="remise-care">-20%</span>
+  <!-- ici nous avons les icones qui sont dans cette carte -->
+  <div class="icone-carte">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+ <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+   <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+  </div>
+  <!-- ici c'est le texte en bas des icones -->
+<span class="nom-du-produit">beurre valio</span><br>
+<span class="prix-actuel">499FCFA</span>
+<span class="ancien-prix">900FCFA</span>
+<div class="compteur-carte">
+<div class="compteur"> <span class="compteur1">-</span class="compteur1"> <span class="compteur1">1</span> <span class="compteur1">+</span> </div>
+<div class="add-to-cart">Add to cart</div>
+</div>
+</div>
+
+<div class="image-categorie" id="div1"><img src="/image/noix.png" alt="noie" width="270px" height="200px" class="image-carte">
+<span class="remise-care">-20%</span>
+  <!-- ici nous avons les icones qui sont dans cette carte -->
+  <div class="icone-carte">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+ <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+   <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+  </div>
+  <!-- ici c'est le texte en bas des icones -->
+<span class="nom-du-produit">beurre valio</span><br>
+<span class="prix-actuel">499FCFA</span>
+<span class="ancien-prix">900FCFA</span>
+<div class="compteur-carte">
+<div class="compteur"> <span class="compteur1">-</span class="compteur1"> <span class="compteur1">1</span> <span class="compteur1">+</span> </div>
+<div class="add-to-cart">Add to cart</div>
+</div>
+</div>
+
+<div class="image-categorie" id="div1"><img src="/image/noix.png" alt="noie" width="270px" height="200px" class="image-carte">
+<span class="remise-care">-20%</span>
+  <!-- ici nous avons les icones qui sont dans cette carte -->
+  <div class="icone-carte">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+ <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+   <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+
+</svg>
+  </div>
+  <!-- ici c'est le texte en bas des icones -->
+<span class="nom-du-produit">beurre valio</span><br>
+<span class="prix-actuel">499FCFA</span>
+<span class="ancien-prix">900FCFA</span>
+<div class="compteur-carte">
+<div class="compteur"> <span class="compteur1">-</span class="compteur1"> <span class="compteur1">1</span> <span class="compteur1">+</span> </div>
+<div class="add-to-cart">Add to cart</div>
+
+</div>
+</div>
+
+<!-- les  boutons de scroll -->
+<div class="btn-droit"></div>
+<div class="btn-gauche"></div>
+
       </section>
 <!-- ici nous avons la section contenant les imformatons sur les produits -->
 <p class="slogan">en sovoir plus sur nos produits et offres</p>
 
 <section class="info">
-<div class="box"> <img src="./image/info.webp" alt="img" width="260px" height="200px">
+<div class="box" id="box1"> <img src="./image/info.webp" alt="img" width="260px" height="200px">
   <p class="conseil">conseil pour une </p>
   <p class="descript">Adoptez un <br>
     en privilégiant les fruits, <br>
@@ -313,7 +436,7 @@
       <p class="slogan2">ce que disent nos clients</p>
 <section class="section6">
 <!-- voici le premier commentaire -->
-<div class="client">
+<div class="client" id="content1">
 <div class="image-icone">
   <img src="/image/client2.jpg" alt="client" class="image-client"> 
 
@@ -423,6 +546,45 @@
                nobis ut  nesciunt quos nam ipsam, <br>
                laudantium quo tempora ea voluptas?</div>
   </div>
+
+
+  <!-- voici le troisieme commentaire -->
+
+  <div class="client" id="div11">
+    <div class="image-icone">
+    <img src="/image/client2.jpg" alt="client" class="image-client"> 
+    <div class="icones">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+        </svg>
+        
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+        </svg>
+
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+          </svg>
+          
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+          </svg>
+
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="gold" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L14.9 8.62L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L9.1 8.62L12 2Z"/>
+          </svg>
+          </div>
+          </div>
+
+          <div class="nom-client">
+            <p id="descition-client">taal phirent</p>
+            <p id="descition-client">client</p>
+            </div>
+  
+            <div class="descrption-client">Lorem ipsum dolor sicing elit. In,<br>
+               nobis ut  nesciunt quos nam ipsam, <br>
+               laudantium quo tempora ea voluptas?</div>
+  </div>
 </section>
 
 
@@ -434,89 +596,20 @@
 
 <footer>
 
+  <div class="section1-footer">
 
+    <div class="titreDescription">
+        L'avenir c'est nous
+      </div>
 
-<div class="section2-footer">
-    <div class="title">liens utiles</div>
-    <div class="lien">devenir detaillant</div>
-    <div class="lien">vente en gros</div>
-    <div class="lien">commandes d'entreprise</div>
-    <div class="lien">partenaires</div>
-    <div class="lien">F.Q.A</div>
-    <div class="lien">contact</div>
-    <div class="lien">A propos de nous</div>
-    <div class="lien">Blog</div>
-    <div class="lien">shop</div>
-    <div class="lien">Trouver un magasin</div>
-    <div class="lien">A propos de nous</div>
-</div>
-
-<div class="section3-footer">
-    <div class="title">Liens rapides</div>
-    <div class="lien">A propos de nous</div>
-    <div class="lien">Blog</div>
-    <div class="lien">shop</div>
-    <div class="lien">Trouver un magasin</div>
-    <div class="lien">Politique de confidentialite</div>
-    <div class="lien">A propos de nous</div>
-    <div class="lien">Blog</div>
-    <div class="lien">shop</div>
-    <div class="lien">Trouver un magasin</div>
-    <div class="lien">Politique de confidentialite</div>
-</div>
-
-<div class="section3-footer">
-    <div class="title">Liens rapides</div>
-    <div class="lien">A propos de nous</div>
-    <div class="lien">Blog</div>
-    <div class="lien">shop</div>
-    <div class="lien">Trouver un magasin</div>
-    <div class="lien">Politique de confidentialite</div>
-    <div class="lien">A propos de nous</div>
-    <div class="lien">Blog</div>
-    <div class="lien">shop</div>
-    <div class="lien">Trouver un magasin</div>
-    <div class="lien">Politique de confidentialite</div>
-</div>
-
-<div class="section4-footer">
-    <div class="title">Contactez-nous</div>
-    <div class="phone-icon">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="grey" xmlns="http://www.w3.org/2000/svg" class="tel">
-            <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.05-.24c1.12.37 2.33.57 3.54.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C10.85 21 3 13.15 3 3.5A1 1 0 0 1 4 2.5H7.5a1 1 0 0 1 1 1c0 1.21.2 2.42.57 3.54a1 1 0 0 1-.24 1.05l-2.2 2.2Z"/>
-            </svg>
-          <Span class="svg-contact">(237) 650 412 395</Span> 
-    </div>
-
-
-    <div class="email-icon">
-        <div class="svg-phone">
-        <svg width="30" height="30"  viewBox="0 0 24 24" fill="grey" xmlns="http://www.w3.org/2000/svg" class="mail">
-            <path d="M4 4h16a2 2 0 0 1 2 2v1.5l-10 6.25L2 7.5V6a2 2 0 0 1 2-2Zm0 5.14V18h16V9.14l-8 5-8-5Z"/>
-          </svg>
-          <span class="svg-email">phirent588@gmail.com</span>
-        
-    </div>
-
-
-    <div class="souscription">Souscrire a notre newletter</div>
-
-    <div class="souscrire">
-        <form action="">
-            <input type="text" placeholder="entrer votre email">
-            <input type="submit">
-        </form>
-
-
-    <div class="section1-footer">
     <div class="description">
         <p>Votre supermarché de confiance :<br> 
-            qualité, fraîcheur et petits prix réunis sous <br>
-             un même toit. Chaque jour, mieux pour vous !</p>
+            qualité, fraîcheur,petits prix réunis <br>
+            qualité, fraîcheur,petits prix réunis <br>
+            qualité, fraîcheur,petits prix réunis <br>
+            sous même toit. Chaque jour, mieux <br>
+             pour vous! phirent [...]</p>
     </div>
-
-    <div class="action">follow Us</div>
-
     <div class="icones-reseaux">
        <div class="icon1">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2" xmlns="http://www.w3.org/2000/svg">
@@ -544,9 +637,48 @@
                 <path d="M20.452 20.452h-3.555v-5.569c0-1.328-.025-3.037-1.851-3.037-1.851 0-2.134 1.445-2.134 2.937v5.669h-3.555V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.368-1.85 3.599 0 4.265 2.368 4.265 5.448v6.293zM5.337 7.433c-1.144 0-2.07-.927-2.07-2.07 0-1.145.926-2.07 2.07-2.07 1.143 0 2.07.925 2.07 2.07 0 1.143-.927 2.07-2.07 2.07zM6.814 20.452H3.861V9h2.953v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.554C0 23.229.792 24 1.771 24h20.451C23.208 24 24 23.229 24 22.277V1.723C24 .771 23.208 0 22.225 0z"/>
               </svg>
           </div>
-    </div></div>
-
     </div>
+    </div>
+
+<div class="section2-footer">
+   <div class="titreDescription">
+    Nous en quelques mots
+   </div>
+<div class="nous1">Aliquam eget leo praesent</div>
+<div class="nous2">Natoque penatibus et magnis</div>
+<div class="nous3">Aliquam eget leo praesent</div>
+<div class="nous4">Natoque penatibus et magnis</div>
+<div class="nous5">Aliquam eget leo praesent</div>
+</div>
+
+<div class="section3-footer">
+  <div class="titre3">Contactez-nous</div>
+  <div class="nous">Abonnez-vous a notre new-letter <br>
+  pour toujours rester connecté</div>
+  <form action="">
+    <input type="text" placeholder="name" class="ipt1"> <br>
+    <input type="text" placeholder="email" class="ipt2"> <br>
+    <button type="submit" class="btnsub">Envoyer</button>
+  </form>
+</div>
+
+<div class="section4-footer">
+  <div class="titre3">Liens utiles</div>
+  <div class="liens">A propos</div>
+  <div class="liens">Blog</div>
+  <div class="liens">find a store</div>
+  <div class="liens">shop</div>
+  <div class="liens">Become retiller</div>
+</div>
+
+<div class="endSection">
+  <div class="liens2">contact</div>
+  <div class="liens2">terms</div>
+  <div class="liens2">privacy</div>
+  <div class="liens2">cookies</div>
+  <div class="liens2">dislaimer</div>
+  <div class="liens2">about</div>
+</div>
 </footer>
 <footer class="footer"><div class="copyright">@copyright2025 phirent. All right reserved. Realisé par TAAL</div></footer>
 </body>
